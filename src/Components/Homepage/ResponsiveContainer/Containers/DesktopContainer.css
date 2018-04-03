@@ -1,0 +1,16 @@
+.NavbarSeg {
+    min-height: 700px; 
+    padding: 1em 0em; 
+    text-align: center;
+};
+
+.NavbarDiv{
+    border: none;
+}
+
+
+.SearchBar{
+    position: relative;
+    margin: auto;
+    width: 50%;
+}
