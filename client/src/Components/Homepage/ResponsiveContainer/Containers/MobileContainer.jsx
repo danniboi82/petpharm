@@ -9,6 +9,7 @@ import {
   Image,
   List,
   Menu,
+  Search,
   Responsive,
   Segment,
   Sidebar,
@@ -41,6 +42,15 @@ class MobileContainer extends Component {
             <Menu.Item>
               <h1>Pet Pharm</h1>
             </Menu.Item>
+            <Search
+              className="SearchBar"
+            // loading={isLoading}
+            // onResultSelect={this.handleResultSelect}
+            // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
+            // results={results}
+            // value={value}
+            // {...this.props}
+            />
             <Menu.Item position='right'>
               <Menu.Item
                 name='top'

@@ -12,6 +12,7 @@ import {
   Responsive,
   Segment,
   Sidebar,
+  Search,
   Visibility,
 } from 'semantic-ui-react'
 import MobileHeading from '../Heading/MobileHeading';
@@ -43,6 +44,15 @@ class TabletContainer extends Component {
             <Menu.Item>
               <h1>Pet Pharm</h1>
             </Menu.Item>
+            <Search
+              className="SearchBar"
+            // loading={isLoading}
+            // onResultSelect={this.handleResultSelect}
+            // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
+            // results={results}
+            // value={value}
+            // {...this.props}
+            />
             <Menu.Item position='right'>
               <Menu.Item
                 name='top'
