@@ -18,44 +18,51 @@ import {
 import './CategoryBar.css';
 
 
-const CategoryBar = () => {
+const CategoryBar = (props) => {
     return (
         <div>
             <Menu
-                style={{textAlign: 'center'}}
+                style={{ textAlign: 'center' }}
             >
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Brand
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Pet
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Symptom
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     About
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Special
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Sign-in
                 </Menu.Item>
                 <Menu.Item
                     className='CateBar'
+                    onClick={props.clicked}
                 >
                     Register
                 </Menu.Item>
