@@ -4,7 +4,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3003;
 
 app.get('/api/test', (req, res)=>{
-    res.send("자 이제 시작해볼까??");
+    res.send({express : "자 이제 시작해볼까??"});
 });
 
 app.listen(PORT, ()=>{

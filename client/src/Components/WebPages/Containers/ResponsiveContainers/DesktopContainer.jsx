@@ -14,10 +14,11 @@ import {
   Segment,
   Sidebar,
   Visibility,
-} from 'semantic-ui-react'
-import Heading from '../Heading/Heading';
+} from 'semantic-ui-react';
 import BG1 from '../../../../images/pet_background.jpg';
 import './DesktopContainer.css';
+import Footer from './Footer/Footer';
+import CategoryBar from './CategoryBar/CategoryBar';
 
 class DesktopContainer extends Component {
   state = {}
@@ -39,7 +40,6 @@ class DesktopContainer extends Component {
             textAlign='center'
             vertical={true}
             className='NavbarSeg'
-            style={{ backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', maxWidth: '100%', backgroundAttachment: 'fixed' }}
           >
             <Container borderless>
               <Menu
@@ -55,13 +55,13 @@ class DesktopContainer extends Component {
                     <h1>Pet Pharm</h1>
                   </Menu.Item>
                   <Search
-                      className = "SearchBar"
-                    // loading={isLoading}
-                    // onResultSelect={this.handleResultSelect}
-                    // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
-                    // results={results}
-                    // value={value}
-                    // {...this.props}
+                    className="SearchBar"
+                  // loading={isLoading}
+                  // onResultSelect={this.handleResultSelect}
+                  // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
+                  // results={results}
+                  // value={value}
+                  // {...this.props}
                   />
                   <Menu.Item position='right'>
                     <Menu.Item
@@ -100,11 +100,13 @@ class DesktopContainer extends Component {
                 </Container>
               </Menu>
             </Container>
-            <Heading />
           </Segment>
-        </Visibility>
 
+            <CategoryBar />
+
+        </Visibility>
         {children}
+        <Footer />
       </Responsive>
     )
   }

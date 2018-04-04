@@ -15,8 +15,8 @@ import {
   Search,
   Visibility,
 } from 'semantic-ui-react'
-import MobileHeading from '../Heading/MobileHeading';
 import './TabletContainer.css'
+import Footer from './Footer/Footer';
 import BG1 from '../../../../images/pet_background.jpg';
 
 class TabletContainer extends Component {
@@ -44,15 +44,7 @@ class TabletContainer extends Component {
             <Menu.Item>
               <h1>Pet Pharm</h1>
             </Menu.Item>
-            <Search
-              className="SearchBar"
-            // loading={isLoading}
-            // onResultSelect={this.handleResultSelect}
-            // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
-            // results={results}
-            // value={value}
-            // {...this.props}
-            />
+
             <Menu.Item position='right'>
               <Menu.Item
                 name='top'
@@ -93,24 +85,34 @@ class TabletContainer extends Component {
             <Segment
               inverted textAlign='center'
               className='SidebarSeg'
-              style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BG1})`, backgroundSize: '100% 100%', maxWidth: '100%', backgroundRepeat: 'none', backgroundAttachment: 'fixed', height: '425px' }}
               vertical>
               <Container>
                 <Menu inverted pointing secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
                   </Menu.Item>
+                  <Menu.Item position='left'>
+                    <Search
+                      className="SearchBar"
+                    // loading={isLoading}
+                    // onResultSelect={this.handleResultSelect}
+                    // onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
+                    // results={results}
+                    // value={value}
+                    // {...this.props}
+                    />
+                  </Menu.Item>
                   <Menu.Item position='right'>
                     <h1>Pet Pharm</h1>
                   </Menu.Item>
                 </Menu>
               </Container>
-              <MobileHeading mobile />
             </Segment>
 
             {children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
+        <Footer/>
       </Responsive>
     )
   }

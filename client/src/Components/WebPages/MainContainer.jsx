@@ -15,12 +15,10 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import ResponsiveContainer from './ResponsiveContainer/ResponsiveContainer';
-import Intro from './Intro/Intro';
-import Footer from './Footer/Footer';
+import ResponsiveContainer from './Containers/ResponsiveContainer';
 import ScrollableAnchor from 'react-scrollable-anchor';
-
-
+import Registration from './Registration/Registration';
+import Homepage from './Home/HomePage';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -36,11 +34,10 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 
 
-const Homepage = () => (
+const MainContainer = () => (
   <ResponsiveContainer>
-      <Intro />
-      <Footer />
+      <Homepage/>
   </ResponsiveContainer>
 )
 
-export default Homepage;
+export default MainContainer;

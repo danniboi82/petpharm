@@ -14,10 +14,9 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import DesktopContainer from './Containers/DesktopContainer';
-import MobileContainer from './Containers/MobileContainer';
-import TabletContainer from './Containers/TabletContainer';
-
+import DesktopContainer from './ResponsiveContainers/DesktopContainer';
+import MobileContainer from './ResponsiveContainers/MobileContainer';
+import TabletContainer from './ResponsiveContainers/TabletContainer';
 
 const ResponsiveContainer = ({ children }) => (
     <div>

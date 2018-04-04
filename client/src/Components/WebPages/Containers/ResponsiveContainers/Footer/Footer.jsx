@@ -23,24 +23,23 @@ const footer = () => {
                                 <List link inverted>
                                     <List.Item as='a'>Home</List.Item>
                                     <List.Item as='a'>About</List.Item>
-                                    <List.Item as='a'>Products</List.Item>
+                                    <List.Item as='a'>Portfolio</List.Item>
                                     <List.Item as='a'>Contact</List.Item>
                                 </List>
                             </Grid.Column>
                             <Grid.Column width={6}>
                                 <Header inverted as='h4'>
-                                    <div>Pet Pharm LLC.</div>
-                                    <br />
-                                    <div>Copyright <Icon name='copyright' /> 2018 </div>
+                                <div>吳孝天 LLC.</div>
+                                <br/>
+                                <div>Copyright <Icon name='copyright'/> 2018 </div>
                                 </Header>
                             </Grid.Column>
                             <Grid.Column width={5}>
-                                <Header as='h4' inverted>Contact Us!</Header>
+                                <Header as='h4' inverted>Contact Me!</Header>
                                 <List link inverted>
-                                    <List.Item >Phone : (714) XXX-XXXX</List.Item>
-                                    <List.Item >Email : pet_pharm@gmail.com</List.Item>
-                                </List>
-                            </Grid.Column>
+                                    <List.Item >Phone : (714) 504-0820</List.Item>
+                                    <List.Item >Email : daniel.oh1228@gmail.com</List.Item>
+                                </List>                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Container>

@@ -15,9 +15,9 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import MobileHeading from '../Heading/MobileHeading';
 import './MobileContainer.css'
 import BG1 from '../../../../images/pet_background.jpg';
+import Footer from './Footer/Footer';
 
 class MobileContainer extends Component {
   state = {}
@@ -91,7 +91,6 @@ class MobileContainer extends Component {
             <Segment
               inverted textAlign='center'
               className='SidebarSeg'
-              style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BG1})`, backgroundSize: '100% 100%', maxWidth: '100%', backgroundAttachment: 'fixed' }}
               vertical>
               <Container>
                 <Menu inverted pointing secondary size='large'>
@@ -103,12 +102,12 @@ class MobileContainer extends Component {
                   </Menu.Item>
                 </Menu>
               </Container>
-              <MobileHeading mobile />
             </Segment>
 
             {children}
           </Sidebar.Pusher>
         </Sidebar.Pushable>
+        <Footer/>
       </Responsive>
     )
   }
