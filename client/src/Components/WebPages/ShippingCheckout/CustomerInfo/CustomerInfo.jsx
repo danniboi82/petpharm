@@ -1,6 +1,8 @@
 import React from 'react';
 import { Form, Button, Grid, Segment, Dropdown, Container, Divider } from 'semantic-ui-react';
-import { States } from '../../../../statesDropdown';
+import { States, Country } from '../../../../common';
+
+
 
 const CustomerInfo = (props) => {
     return (
@@ -42,7 +44,7 @@ const CustomerInfo = (props) => {
                             </Grid.Column>
                             <Grid.Column width={6}>
                                 <Form>
-                                    <Form.Dropdown type='text' name='country' placeholder='Country' selection/>
+                                    <Form.Dropdown type='text' name='country' placeholder='Country' options={Country} selection/>
                                 </Form>
                             </Grid.Column>
                             <Grid.Column width={6}>
@@ -69,6 +71,7 @@ const CustomerInfo = (props) => {
                                 <Form.Button style={{ display: 'inline-block' }}>Apply</Form.Button>
                             </Form.Group>
                             <h5>Total : $(product.price + shipping + tax)</h5>
+                            <Button>Go to Shipping</Button>
                         </Container>
                     </Grid.Column>
                 </Grid>
