@@ -107,8 +107,10 @@ class DesktopContainer extends Component {
             inverted={!fixed}
             pointing={!fixed}
             borderless
-            secondary={!fixed} 
-            clicked={this.handleItemClick}/>
+            secondary={!fixed}
+            clicked={this.handleItemClick} />
+
+
 
         </Visibility>
         {children}

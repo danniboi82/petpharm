@@ -22,6 +22,9 @@ const CategoryBar = (props) => {
     return (
         <div>
             <Menu
+                secondary={props.secondary}
+                fixed={props.fixed}
+                pointing={props.pointing}
                 style={{ textAlign: 'center' }}
             >
                 <Menu.Item

@@ -20,6 +20,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Registration from './Registration/Registration';
 import Homepage from './Home/HomePage';
 import SignIn from './SignIn/Signin';
+import ProductDetails from './ProductDetails/ProductDetails';
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
@@ -36,7 +37,7 @@ import SignIn from './SignIn/Signin';
 
 const MainContainer = () => (
   <ResponsiveContainer>
-      <SignIn/>
+      <ProductDetails/>
   </ResponsiveContainer>
 )
 
