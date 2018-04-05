@@ -1,0 +1,14 @@
+.wrappedText {
+    border: 1px solid #DCDCDC;
+    padding: 10px;
+}
+
+.wrapper {
+    border: 1px solid #DCDCDC;
+    padding: 10px;
+    height: 100%
+}
+
+.registerButton {
+    margin-top: 25px;
+}

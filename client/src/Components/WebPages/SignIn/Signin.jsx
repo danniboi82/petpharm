@@ -1,46 +1,30 @@
 import React from 'react';
 import { Divider, Card, Button, Image, Segment, Container, Form, Grid } from 'semantic-ui-react';
+import './Signin.css';
 
-
-const Registration = (props) => {
+const SignIn = (props) => {
     return (
         <Segment vertical style={{ padding: '5em 0em' }}>
             <Container>
-                <h1>Registration</h1>
+                <h1>Sign-In</h1>
                 <Grid stackable>
                     <Grid.Column width={8}>
                         <Form >
-                            <Grid columns={2}>
+                            <Grid columns={1}>
                                 <Grid.Column>
                                     <Form.Field >
-                                        <Form.Input label='first name' placeholder='First Name' name='firstName' />
-                                    </Form.Field>
-                                </Grid.Column>
-                                <Grid.Column>
-                                    <Form.Field >
-                                        <Form.Input label='last name' placeholder='Last Name' name='lastName' />
+                                        <Form.Input label='Username/Email' placeholder='Username/Email' name='username' />
                                     </Form.Field>
                                 </Grid.Column>
                             </Grid>
                             <Grid columns={1}>
                                 <Grid.Column>
-                                    <Form.Field>
-                                        <Form.Input label='email' placeholder='johndoe@gmail.com' name='email' />
-                                    </Form.Field>
-                                </Grid.Column>
-                            </Grid>
-                            <Grid columns={2}>
-                                <Grid.Column>
-                                    <Form.Field>
+                                    <Form.Field >
                                         <Form.Input type='password' label='password' placeholder='password' name='password' />
                                     </Form.Field>
                                 </Grid.Column>
-                                <Grid.Column>
-                                    <Form.Field>
-                                        <Form.Input type='password' label='confirm password' placeholder='confirm password' name='passcheck' />
-                                    </Form.Field>
-                                </Grid.Column>
                             </Grid>
+
                             <Grid columns={1}>
                                 <Grid.Column>
                                     <Form.Field label="Yes, sign me up for special offers" control='input' type='checkbox' />
@@ -49,24 +33,41 @@ const Registration = (props) => {
                             <Grid columns={1}>
                                 <Grid.Column textAlign="center" >
                                     <Form.Field >
-                                        <Form.Button type='submit' style={{ width: '100%' }}>Register !!</Form.Button>
+                                        <Form.Button type='submit' style={{ width: '100%' }}>Sign-In !!</Form.Button>
                                     </Form.Field>
                                 </Grid.Column>
                             </Grid>
                         </Form>
                     </Grid.Column>
 
-                    <Grid.Column width={6}>
-                        <Image src="https://static1.squarespace.com/static/50eb5641e4b0684ae74d6dc0/t/511c623ae4b057ac416d149a/1365133766999/Dog-with-stethoscope.jpeg?format=300w" style={{ margin: '0 auto' }} />
+
+
+                    <Grid.Column width={8}>
+                        <Container textAlign='center' className="wrapper">
+                            <Container  textAlign='left'>
+                                <div className="wrappedText">
+                                    <h3>Register w/ Pet Pharm for a enhanced shopping experience and faster checkout</h3>
+                                    <h5>Benefits include : </h5>
+                                    <ul>
+                                        <li> Faster checkout with stored address and payment information</li>
+                                        <li>Keep track of previous orders (brand, etc..)</li>
+                                        <li>Exclusive offers!!</li>
+                                    </ul>
+                                </div>
+                            </Container>
+                            <Button primary className='registerButton'>
+                                Register
+                            </Button>
+                        </Container>
                     </Grid.Column>
 
                 </Grid>
             </Container>
-        </Segment>
+        </Segment >
     )
 }
 
-export default Registration;
+export default SignIn;
 
 
 {/* 
