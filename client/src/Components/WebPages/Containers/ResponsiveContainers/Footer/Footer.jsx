@@ -29,7 +29,7 @@ const footer = () => {
                             </Grid.Column>
                             <Grid.Column width={6}>
                                 <Header inverted as='h4'>
-                                <div>吳孝天 LLC.</div>
+                                <div>PetPharms LLC.</div>
                                 <br/>
                                 <div>Copyright <Icon name='copyright'/> 2018 </div>
                                 </Header>
@@ -37,8 +37,8 @@ const footer = () => {
                             <Grid.Column width={5}>
                                 <Header as='h4' inverted>Contact Me!</Header>
                                 <List link inverted>
-                                    <List.Item >Phone : (714) 504-0820</List.Item>
-                                    <List.Item >Email : daniel.oh1228@gmail.com</List.Item>
+                                    <List.Item >Phone : (714) xxx-xxxx</List.Item>
+                                    <List.Item >Email : xxxxx@gmail.com</List.Item>
                                 </List>                            </Grid.Column>
                         </Grid.Row>
                     </Grid>

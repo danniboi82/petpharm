@@ -36,7 +36,7 @@ import Homepage from './Home/HomePage';
 
 const MainContainer = () => (
   <ResponsiveContainer>
-      <Homepage/>
+      <Registration/>
   </ResponsiveContainer>
 )
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Image, Segment, Container } from 'semantic-ui-react';
+import  {Divider, Card, Button, Image, Segment, Container } from 'semantic-ui-react';
 
 const petRx =
     [
@@ -43,11 +43,36 @@ const petRx =
 
 const ProdGrid = (props) => {
     return (
-        <Segment>
+        <Segment vertical style={{ padding: '5em 0em' }}>
             <Container>
                 <div className='ProdGridWrapper'>
                     <p>Popular Rx</p>
-                    <Card.Group>
+                    <Card.Group centered>
+                        {petRx.map(drug => (
+                            <Card
+                                key={drug.img}
+                            >
+                                <Image src={drug.img} alt="" />
+                                <Card.Content>
+                                    <Card.Header>
+                                        {drug.name}
+                                    </Card.Header>
+                                    <Card.Description>
+                                        <p>Price :${drug.cost}</p>
+                                        <p>Description : {drug.description} </p>
+                                    </Card.Description>
+                                </Card.Content>
+                            </Card>
+                        ))}
+                    </Card.Group>
+                </div>
+                <Divider/>
+            </Container>
+
+            <Container>
+                <div className='ProdGridWrapper'>
+                    <p>New Rx</p>
+                    <Card.Group centered>
                         {petRx.map(drug => (
                             <Card
                                 key={drug.img}
