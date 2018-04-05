@@ -20,14 +20,14 @@ const SignIn = (props) => {
                             <Grid columns={1}>
                                 <Grid.Column>
                                     <Form.Field >
-                                        <Form.Input type='password' label='password' placeholder='password' name='password' />
+                                        <Form.Input type='password' label='Password' placeholder='Password' name='password' />
                                     </Form.Field>
                                 </Grid.Column>
                             </Grid>
 
                             <Grid columns={1}>
                                 <Grid.Column>
-                                    <Form.Field label="Yes, sign me up for special offers" control='input' type='checkbox' />
+                                    <Form.Field label="Remember Me" control='input' type='checkbox' />
                                 </Grid.Column>
                             </Grid>
                             <Grid columns={1}>
@@ -39,8 +39,6 @@ const SignIn = (props) => {
                             </Grid>
                         </Form>
                     </Grid.Column>
-
-
 
                     <Grid.Column width={8}>
                         <Container textAlign='center' className="wrapper">
@@ -70,11 +68,3 @@ const SignIn = (props) => {
 export default SignIn;
 
 
-{/* 
-                    
-
-                    <Form.Field>
-                        <Form.Input type='password' label='password' placeholder='password' name='password' />
-                        <Form.Input type='password' label='confirm password' placeholder='confirm password' name='passcheck' />
-                    </Form.Field>
-                 */}

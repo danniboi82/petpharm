@@ -1,14 +1,18 @@
 .wrappedText {
     border: 1px solid #DCDCDC;
     padding: 10px;
+    background: rgb(233, 233, 233);
 }
 
 .wrapper {
     border: 1px solid #DCDCDC;
     padding: 10px;
-    height: 100%
+    height: 100%;
+    background: white;
+
 }
 
 .registerButton {
-    margin-top: 25px;
+    margin-top: 20px !important;
+    width: 100%;
 }
