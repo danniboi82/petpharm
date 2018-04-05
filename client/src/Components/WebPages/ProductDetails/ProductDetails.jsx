@@ -14,7 +14,19 @@ const ProductDetails = (props) => {
                     <Grid.Column width={8}>
                         <h1>Heartgard Plus Chewables (product.name)</h1>
                         <h4>Pricing : $(product.price)</h4>
-                        <h4>Add to cart / QTY</h4>
+                        <h4>Select Pet's Weight : </h4>
+                        <div className='petWeight'>
+                            <Button>10-25lbs</Button>
+                            <Button>26-50lbs</Button>
+                            <Button>51-100lbs</Button>
+                        </div>
+                        <h4> Select Supply : </h4>
+                        <div className='Supply'>
+                            <Button>6 pack</Button>
+                            <Button>12 pack</Button>
+                        </div>
+
+                        <h4> Select QTY</h4>
                         <Button primary type='submit' equal>Add to Cart</Button>
                         <Button color='red' type='submit' equal >Remove item</Button>
                     </Grid.Column>
