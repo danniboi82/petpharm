@@ -12,7 +12,7 @@ export default path => {
   app.use(bodyParser.json());
 
   app.use(express.static(`${path}/client`));
-  app.use("/api/organization", routers.organization);
+  app.use("/api/users", routers.users);
 
   // Any non API GET routes will be directed to our React App and handled by React Router
   app.get("*", (req, res) => {

@@ -1,6 +1,6 @@
-import organization from './organization';
+import users from './users';
 const routers = {
-  organization
+  users
 };
 export {
   routers as default,
