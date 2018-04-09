@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS `petPharm_db`;
+CREATE DATABASE `petPharm_db`;
