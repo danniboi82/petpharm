@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -37,9 +37,17 @@ import CustomerInfo from './ShippingCheckout/CustomerInfo/CustomerInfo';
 
 
 const MainContainer = () => (
-  <ResponsiveContainer>
-      <CustomerInfo/>
-  </ResponsiveContainer>
+  <BrowserRouter>
+    <ResponsiveContainer>
+      <Switch>
+        <Route exact path='/' render={Homepage} />
+        <Route path='/signin' render={SignIn} />
+        <Route path='/registration' render={Registration} />
+        <Route path='/productDetails' render={ProductDetails} />
+        <Route path='/customerInfo' render={CustomerInfo} />
+      </Switch>
+    </ResponsiveContainer>
+  </BrowserRouter>
 )
 
 export default MainContainer;

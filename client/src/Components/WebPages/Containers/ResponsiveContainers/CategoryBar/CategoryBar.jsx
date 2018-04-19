@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Button,
     Container,
@@ -28,12 +29,16 @@ const CategoryBar = (props) => {
                 style={{ textAlign: 'center' }}
             >
                 <Menu.Item
+                as={Link}
+                to='/registration'
                     className='CateBar'
                     onClick={props.clicked}
                 >
                     Brand
                 </Menu.Item>
                 <Menu.Item
+                as={Link}
+                to='/'
                     className='CateBar'
                     onClick={props.clicked}
                 >
