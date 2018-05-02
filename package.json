@@ -78,7 +78,7 @@
     "watch": "concurrently \"npm run watch-client\" \"npm run watch-server\"",
     "build-client": "node scripts/build.js",
     "build-server": "babel -d ./build/config ./config && babel -d ./build/server ./server && babel -d ./build ./app.js",
-    "build": "concurrently \"npm run watch-client\" \"npm run watch-server\"",
+    "build": "npm run build-client && npm run build-server",
     "dev-build": "cross-env NODE_ENV=development npm  build",
     "prod-build": "cross-env NODE_ENV=production npm  build",
     "build-reset": "rm -rf build",
@@ -91,7 +91,7 @@
     "prod-start": "cross-env NODE_ENV=production npm run start",
     "dev": "npm run dev-build && npm run dev-start",
     "prod": "npm run prod-build && npm run prod-start",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run watch"
   },
   "jest": {
     "collectCoverageFrom": [
