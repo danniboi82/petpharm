@@ -95,7 +95,7 @@
     "prod-start": "cross-env NODE_ENV=production npm run start",
     "dev": "npm run dev-build && npm run dev-start",
     "prod": "npm run prod-build && npm run prod-start",
-    "heroku-postbuild": "npm run watch"
+    "heroku-postbuild": "npm run build"
   },
   "jest": {
     "collectCoverageFrom": [
