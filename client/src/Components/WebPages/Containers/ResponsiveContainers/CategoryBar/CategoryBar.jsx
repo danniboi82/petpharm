@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {
     Button,
     Container,
@@ -14,10 +14,9 @@ import {
     Search,
     Segment,
     Sidebar,
-    Visibility,
+    Visibility
 } from 'semantic-ui-react';
 import './CategoryBar.css';
-
 
 const CategoryBar = (props) => {
     return (
@@ -26,58 +25,49 @@ const CategoryBar = (props) => {
                 secondary={props.secondary}
                 fixed={props.fixed}
                 pointing={props.pointing}
-                style={{ textAlign: 'center' }}
-            >
+                style={{
+                textAlign: 'center'
+            }}>
                 <Menu.Item
-                as={Link}
-                to='/registration'
+                    as={Link}
+                    to='/registration'
                     className='CateBar'
-                    onClick={props.clicked}
-                >
+                    onClick={props.clicked}>
                     Brand
                 </Menu.Item>
-                <Menu.Item
-                as={Link}
-                to='/'
-                    className='CateBar'
-                    onClick={props.clicked}
-                >
-                    Pet
+                <Menu.Item as={Link} to='/signin' className='CateBar' onClick={props.clicked}>
+                    Sign-in Page
                 </Menu.Item>
                 <Menu.Item
+                    as={Link}
+                    to='/productDetails'
                     className='CateBar'
-                    onClick={props.clicked}
-                >
-                    Symptom
+                    onClick={props.clicked}>
+                    Product Page
                 </Menu.Item>
                 <Menu.Item
+                    as={Link}
+                    to='/customerInfo'
                     className='CateBar'
-                    onClick={props.clicked}
-                >
+                    onClick={props.clicked}>
                     About
                 </Menu.Item>
                 <Menu.Item
+                    as={Link}
+                    to='/customerInfo'
                     className='CateBar'
-                    onClick={props.clicked}
-                >
-                    Special
+                    onClick={props.clicked}>
+                    catebarItem
                 </Menu.Item>
-                <Menu.Item
-                    className='CateBar'
-                    onClick={props.clicked}
-                >
-                    Sign-in
+                <Menu.Item as={Link} to='/signin' className='CateBar' onClick={props.clicked}>
+                    catebarItem
                 </Menu.Item>
-                <Menu.Item
-                    className='CateBar'
-                    onClick={props.clicked}
-                >
-                    Register
+                <Menu.Item as={Link} to='/signin' className='CateBar' onClick={props.clicked}>
+                    catebarItem
                 </Menu.Item>
             </Menu>
         </div>
     )
 };
-
 
 export default CategoryBar;

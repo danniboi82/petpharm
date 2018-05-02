@@ -19,6 +19,7 @@ import BG1 from '../../../../images/pet_background.jpg';
 import './DesktopContainer.css';
 import Footer from './Footer/Footer';
 import CategoryBar from './CategoryBar/CategoryBar';
+import { Link } from 'react-router-dom';
 
 class DesktopContainer extends Component {
   state = {}
@@ -49,7 +50,7 @@ class DesktopContainer extends Component {
               borderless
               secondary={!fixed}
               size='large'>
-              <Menu.Item>
+              <Menu.Item as={Link} to='/'>
                 <h1>Pet Pharm</h1>
               </Menu.Item>
               <Search

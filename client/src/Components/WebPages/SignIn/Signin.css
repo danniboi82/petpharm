@@ -2,6 +2,7 @@
     border: 1px solid #DCDCDC;
     padding: 10px;
     background: rgb(233, 233, 233);
+    border-radius: 10px;
 }
 
 .wrapper {
@@ -9,7 +10,7 @@
     padding: 10px;
     height: 100%;
     background: white;
-
+    border-radius: 10px;
 }
 
 .registerButton {
